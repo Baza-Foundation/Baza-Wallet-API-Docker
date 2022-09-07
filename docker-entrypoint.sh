@@ -4,8 +4,7 @@ set -e
 docker_verify_minimum_env() {
     if [ -z "$WALLET_API_RPC_PASSWORD" ]; then
 		cat >&2 <<-'EOE'
-			Error: You must provide WALLET_API_RPC_PASSWORD env variable to initialize
-            this container
+			Error: You must provide WALLET_API_RPC_PASSWORD env variable to initialize this container
 		EOE
 		exit 1
 	fi
