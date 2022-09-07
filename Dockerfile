@@ -40,4 +40,4 @@ WORKDIR /data
 COPY wallet-api /bin
 COPY docker-entrypoint.sh /bin
 ENTRYPOINT ["docker-entrypoint.sh"]
-CMD "/bin/wallet-api -r $WALLET_API_RPC_PASSWORD --rpc-bind-ip 0.0.0.0 --enable-cors * --log-level 1"
+CMD wallet-api -r $WALLET_API_RPC_PASSWORD --rpc-bind-ip 0.0.0.0 --enable-cors * --log-level 1
