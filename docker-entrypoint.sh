@@ -12,8 +12,8 @@ docker_verify_minimum_env() {
 
 docker_verify_minimum_env
 
-mkdir -p /data/wallet-file/
-chmod 700 /data/wallet-file/
+mkdir -p /data
+chmod 700 /data
 
 # Change file ownership to baza if running as root
 # and drop privilege to baza
