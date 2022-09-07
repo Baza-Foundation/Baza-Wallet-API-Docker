@@ -1,4 +1,4 @@
-### Official Container for baza wallet api
+### Official container image for baza wallet api
 
 Homepage: [baza.foundation](https://baza.foundation)
 
