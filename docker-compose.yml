@@ -1,0 +1,12 @@
+version: "2.2"
+services:
+    baza-wallet-api:
+        restart: always
+        image: ewarehouse/baza-wallet-api
+        ports:
+            - 127.0.0.1:8070:8070
+        volumes:
+            - ./baza-wallet-api-data:/data
+        # IMP: Change the below environment variable's value before you start
+        environment:
+            - WALLET_API_RPC_PASSWORD=changethis
